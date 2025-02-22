@@ -119,8 +119,6 @@ class _TodoViewState extends State<TodoView> {
     TextEditingController editDes =
         TextEditingController(text: list[index]["des"]);
 
-    print("dilaog");
-
     showDialog<void>(
       context: context,
       barrierDismissible: false, // user must tap button!
