@@ -78,7 +78,7 @@ class _TodoViewState extends State<TodoView> {
                 controller: inputTitle,
                 decoration: const InputDecoration(labelText: "Input Data "),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               TextField(
@@ -91,6 +91,7 @@ class _TodoViewState extends State<TodoView> {
               ),
               ElevatedButton.icon(
                   onPressed: () {
+                    // ignore: avoid_print
                     print(inputTitle.text);
                     list.add({"title": inputTitle.text, "des": inputDes.text});
                     setState(() {});
